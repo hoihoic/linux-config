@@ -6,4 +6,5 @@ set number
 filetype indent on
 set autoindent
 set grepprg=git\ grep\ -EHn\ $*
+colorscheme default
 
