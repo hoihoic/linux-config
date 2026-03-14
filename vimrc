@@ -11,6 +11,12 @@ if lang_used == 'Python'
 elseif lang_used == 'C++'
   set cindent
 
+set undofile
+set undodir=~/.vim/undodir
+if !isdirectory(expand('~/.vim/undodir'))
+  call mkdir(expand('~/.vim/undodir'), "p")
+endif
+
 set number
 filetype indent on
 set autoindent
